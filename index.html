@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Shelter Navigasi Bandara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Monitoring Shelter Navigasi Bandara</h1>
+        <p>Sistem Pemantauan Kondisi Peralatan Navigasi Berbasis IoT</p>
+    </header>
+
+    <main>
+        <section class="status">
+            <h2>Status Sistem</h2>
+            <p id="koneksi">Status koneksi: Menunggu koneksi...</p>
+            <p id="waktu">Pembaruan terakhir: -</p>
+        </section>
+
+        <section class="dashboard">
+            <div class="card">
+                <h3>Suhu</h3>
+                <p id="suhu">-- °C</p>
+            </div>
+
+            <div class="card">
+                <h3>Kelembapan</h3>
+                <p id="kelembapan">-- %</p>
+            </div>
+
+            <div class="card">
+                <h3>Akses Pintu</h3>
+                <p id="pintu">Menunggu data</p>
+            </div>
+
+            <div class="card">
+                <h3>Genangan Air</h3>
+                <p id="air">Menunggu data</p>
+            </div>
+        </section>
+
+        <section class="status">
+            <h2>Informasi Sistem</h2>
+            <p id="peringatan">Belum ada data sensor.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyek Tugas Akhir | Teknik Navigasi Udara</p>
+    </footer>
+
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
